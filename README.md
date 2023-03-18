@@ -1,4 +1,4 @@
-# Trackrs__financial_tracking
+# Trackr__financial_tracking
 A financial budgeting app built on NextJs with Prisma and MySQL.
 
 This is a project for financial tracking called Trackrs__financial_tracking that aims to help individuals track 
@@ -9,7 +9,7 @@ This is a project for financial tracking called Trackrs__financial_tracking that
 The project will be developed on GitHub, and this README file provides an overview of the project and its development process.
 
 ## Getting Started
-To get started with the project, you will need to clone the repository and install any dependencies required. This project is written in Python and uses Flask for the web framework. You will also need to set up a database to store financial data.
+To get started with the project, you will need to clone the repository and install any dependencies required. This project is written in NextJs V13 with MYSQL and PrismaJS. You will also need to set up a database to store financial data.
 
 ## Project Structure
 The project structure will be organized around the following components:
@@ -33,4 +33,4 @@ We welcome contributions to this project! If you would like to contribute, pleas
 If you find any bugs or issues with the project, please report them using the Issues feature in GitHub. When reporting a bug, please provide as much detail as possible, including steps to reproduce the issue and any relevant error messages.
 
 ## Conclusion
-Trackrs__financial_tracking is a financial tracking application that aims to help individuals and businesses track their financial transactions and make informed financial decisions. We welcome contributions to the project and are committed to ensuring that the project is developed to a high standard of quality.
+Trackr__financial_tracking is a financial tracking application that aims to help individuals track their financial transactions and make informed financial decisions. We welcome contributions to the project and are committed to ensuring that the project is developed to a high standard of quality.
