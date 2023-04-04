@@ -34,3 +34,6 @@ If you find any bugs or issues with the project, please report them using the Is
 
 ## Conclusion
 Trackr__financial_tracking is a financial tracking application that aims to help individuals track their financial transactions and make informed financial decisions. We welcome contributions to the project and are committed to ensuring that the project is developed to a high standard of quality.
+
+## Setup Task
+1. Egor B.
