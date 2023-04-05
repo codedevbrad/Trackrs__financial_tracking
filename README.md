@@ -14,13 +14,13 @@ To get started with the project, you will need to clone the repository and insta
 ## Project Structure
 The project structure will be organized around the following components:
 
-1. User Interface
+1. User Interface: 
 This component will provide the user interface for the application, allowing users to input financial transactions, set budgets, and view financial reports.
 
-2. Backend
+2. Backend: 
 The backend will handle the processing of financial transactions, storing and retrieving data from the database, and generating financial reports.
 
-3. Database
+3. Database: 
 The database will be used to store financial data such as transactions, budgets, and user data.
 
 ## Development Process
@@ -37,3 +37,4 @@ Trackr__financial_tracking is a financial tracking application that aims to help
 
 ## Setup Task
 1. Egor B.
+2. Ash
