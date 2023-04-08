@@ -17,7 +17,7 @@ To get started with the project,
 
 1. you will need to clone the repository.
 
-2. install any dependencies required ```javascript npm i```. 
+2. install any dependencies required ```npm i```. 
 
 3. create the .env file and populate with:
 
