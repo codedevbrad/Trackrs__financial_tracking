@@ -1,5 +1,7 @@
 # Trackr__financial_tracking
-A financial budgeting app built on NextJs with Prisma and MySQL.
+A financial budgeting app built with:
+
+[![My Skills](https://skills.thijs.gg/icons?i=ts,nextjs,tailwind,postgres,prisma)](https://skills.thijs.gg)
 
 This is a project for financial tracking called Trackrs__financial_tracking that aims to help individuals track 
 * their financial transactions, 
