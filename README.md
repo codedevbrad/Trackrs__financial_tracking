@@ -20,9 +20,10 @@ To get started with the project,
 2. install any dependencies required ```javascript npm i```. 
 
 3. create the .env file and populate with:
+
 | env          | Description       |
 | ------------ | ----------------- |
-| DATABASE_URL | POSTGRES DB URL   |
+| DATABASE_URL | POSTGRES DB connection string URL   |
 
 4. create the .env.local file and populate with:
 
