@@ -9,7 +9,9 @@ This is a project for financial tracking called Trackrs__financial_tracking that
 * monitor their budgets
 * and make informed financial decisions. 
 
-The project will be developed on GitHub, and this README file provides an overview of the project and its development process.
+## Features being worked on / completed.
+![features](https://user-images.githubusercontent.com/46296577/230727161-2340f867-32bf-4801-b698-3c0100cf47b1.jpg)
+
 
 ## Before you can run the project.
 
