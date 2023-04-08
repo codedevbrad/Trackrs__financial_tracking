@@ -1,5 +1,5 @@
 {
-  "name": "trackr",
+  "name": "template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,27 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
+    "@headlessui/react": "^1.7.13",
+    "@heroicons/react": "^2.0.17",
+    "@next/font": "13.1.6",
+    "@prisma/client": "^4.10.1",
+    "@tailwindcss/forms": "^0.5.3",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.1.6",
+    "next": "13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-error-boundary": "^4.0.2"
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
+    "@types/node": "^18.13.0",
+    "@types/react": "^18.0.31",
+    "@types/react-dom": "^18.0.11",
+    "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7"
+    "prisma": "^4.10.1",
+    "tailwindcss": "^3.2.6",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
   }
 }
