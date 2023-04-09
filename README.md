@@ -11,8 +11,7 @@ This is a project for financial tracking called Trackrs__financial_tracking that
 
 ## features to work on / completed.
 
-![features](https://user-images.githubusercontent.com/46296577/230730802-74a5d508-8460-4bed-a99d-c27abd9f46b7.jpg)
-
+https://github.com/users/codedevbrad/projects/2
 
 ## Before you can run the project.
 
