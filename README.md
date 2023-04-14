@@ -11,14 +11,13 @@ This is a project for financial tracking called Trackrs__financial_tracking that
 
 
 ## features to work on / completed.
-[x] Prisma working with Railway db.
-[x] Login / signup handled by clerk Auth.
-[x] Auth page protection and user fetchable in client / API.
-[x] Next 13 Layout for non authed and authed users.
-[] 
+- [x] Prisma working with Railway db.
+- [x] Login / signup handled by clerk Auth.
+- [x] Auth page protection and user fetchable in client / API.
+- [x] Next 13 Layout for non authed and authed users.
 
 
-![features](https://user-images.githubusercontent.com/46296577/230730802-74a5d508-8460-4bed-a99d-c27abd9f46b7.jpg)
+https://github.com/users/codedevbrad/projects/2
 
 
 ## Before you can run the project.
