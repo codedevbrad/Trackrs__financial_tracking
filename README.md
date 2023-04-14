@@ -2,7 +2,7 @@
 
 A financial budgeting app built with:
 
-[![My Skills](https://skills.thijs.gg/icons?i=ts,nextjs,ts,tailwind,postgres,prisma,postman)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=nextjs,ts,tailwind,postgres,prisma,postman)](https://skills.thijs.gg)
 
 This is a project for financial tracking called Trackrs__financial_tracking that aims to help individuals track 
 * their financial transactions, 
