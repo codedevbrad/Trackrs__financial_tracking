@@ -16,8 +16,7 @@ This is a project for financial tracking called Trackrs__financial_tracking that
 - [x] Auth page protection and user fetchable in client / API.
 - [x] Next 13 Layout for non authed and authed users.
 
-
-clerkauth_integration
+[Trackrs__financial_tracking - PB1](https://github.com/users/codedevbrad/projects/2)
 
 ## Before you can run the project.
 
