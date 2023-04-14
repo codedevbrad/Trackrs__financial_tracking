@@ -17,8 +17,7 @@ This is a project for financial tracking called Trackrs__financial_tracking that
 - [x] Next 13 Layout for non authed and authed users.
 
 
-https://github.com/users/codedevbrad/projects/2
-
+clerkauth_integration
 
 ## Before you can run the project.
 
