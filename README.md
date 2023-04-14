@@ -2,16 +2,22 @@
 
 A financial budgeting app built with:
 
-[![My Skills](https://skills.thijs.gg/icons?i=ts,nextjs,tailwind,postgres,prisma)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=ts,nextjs,ts,tailwind,postgres,prisma,postman)](https://skills.thijs.gg)
 
 This is a project for financial tracking called Trackrs__financial_tracking that aims to help individuals track 
 * their financial transactions, 
 * monitor their budgets
 * and make informed financial decisions. 
 
-## features to work on / completed.
 
-https://github.com/users/codedevbrad/projects/2
+## features to work on / completed.
+- [x] Prisma working with Railway db.
+- [x] Login / signup handled by clerk Auth.
+- [x] Auth page protection and user fetchable in client / API.
+- [x] Next 13 Layout for non authed and authed users.
+
+
+clerkauth_integration
 
 ## Before you can run the project.
 
@@ -21,13 +27,7 @@ To get started with the project,
 
 2. install any dependencies required ```npm i```. 
 
-3. create the .env file and populate with:
-
-| env          | Description       |
-| ------------ | ----------------- |
-| DATABASE_URL | POSTGRES DB connection string URL   |
-
-4. create the .env.local file and populate with:
+3. create the .env file and .env.local using the example .env.example and .env.local.example. 
 
 
 ## Project Structure.
