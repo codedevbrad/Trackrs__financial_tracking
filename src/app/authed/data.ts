@@ -8,7 +8,19 @@ const appPagesNavigation = [
     { name: 'tracking expenses', href: `${authedRoute}/expenses`,  icon: UsersIcon, current: false },
     { name: 'smart analysis',  href: `${authedRoute}/smart-analysis`,     icon: UsersIcon, current: false },
     { name: 'finance education',  href: `${authedRoute}/smart-analysis`,  icon: UsersIcon, current: false }
-]
+];
+
+const tablePresentations = {
+    incme: {
+
+    },
+    expenses: {
+
+    },
+    categories: {
+        
+    }
+}
 
 const colorScheme = {
     light: {
