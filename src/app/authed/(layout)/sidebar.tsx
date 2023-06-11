@@ -2,19 +2,21 @@
 
 import { Fragment, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
-import { Bars3Icon, BellIcon, Cog6ToothIcon, HomeIcon, UsersIcon, XMarkIcon, } from '@heroicons/react/24/outline'
+import { Bars3Icon, BellIcon, Cog6ToothIcon, XMarkIcon } from '@heroicons/react/24/outline'
 
-import UserAvatar from './profile';
+import AppLogo from '@/app/sharableComponents/logo'
 
-const navigation = [
-  { name: 'Dashboard', href: '/authed/dashboard', icon: HomeIcon, current: true },
-  { name: 'Chat',      href: '/authed/chat', icon: UsersIcon, current: false },
-]
+import UserAvatar from './(topBar)/profile';
+import ChangeByDates from './(topBar)/dateSelector';
+import AddExpense from './(topBar)/addExpense';
+
+import { appPagesNavigation } from '../data';
 
 const userNavigation = [
   { name: 'Your profile', href: '#' },
   { name: 'Sign out', href: '#' },
 ]
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -24,7 +26,7 @@ function classNames(...classes) {
 function AppSidebarMenu ( ) {
     return (
       <ul role="list" className="-mx-2 space-y-1">
-        { navigation.map((item) => (
+        { appPagesNavigation.map((item) => (
           <li key={item.name}>
             <a href={item.href} className={classNames( item.current ? 'bg-gray-800 text-white' : 'text-gray-400 hover:text-white hover:bg-gray-800',  'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'  )} >
               <item.icon className="h-6 w-6 shrink-0" aria-hidden="true" />
@@ -36,6 +38,7 @@ function AppSidebarMenu ( ) {
     )
 }
 
+
 function ImageComponent ( { src } ) {
     return (
       <img className="h-8 w-8 rounded-full bg-gray-50" src={ src } alt="" />
@@ -44,7 +47,6 @@ function ImageComponent ( { src } ) {
 
 /* === CHAT Component === */
 function ChatHistory ( ) {
-  
     const chats = [
       { id: 1, name: 'Waves splashing ...', href: '#', initial: 'W', current: false },
       { id: 2, name: 'New York umbrella ...', href: '#', initial: 'N', current: false },
@@ -52,27 +54,27 @@ function ChatHistory ( ) {
     ]
     return (
         <>
-              <div className="text-xs font-semibold leading-6 text-gray-400">Your teams</div>
-              <ul role="list" className="-mx-2 mt-2 space-y-1">
-                {chats.map(( chat ) => (
-                  <li key={ chat.name}>
-                    <a
-                      href={ chat.href}
-                      className={classNames(
-                        chat.current
-                          ? 'bg-gray-800 text-white'
-                          : 'text-gray-400 hover:text-white hover:bg-gray-800',
-                        'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
-                      )}
-                    >
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">
-                        {chat.initial}
-                      </span>
-                      <span className="truncate">{chat.name}</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
+            <div className="text-xs font-semibold leading-6 text-gray-400">Your teams</div>
+            <ul role="list" className="-mx-2 mt-2 space-y-1">
+              {chats.map(( chat ) => (
+                <li key={ chat.name}>
+                  <a
+                    href={ chat.href}
+                    className={classNames(
+                      chat.current
+                        ? 'bg-gray-800 text-white'
+                        : 'text-gray-400 hover:text-white hover:bg-gray-800',
+                      'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
+                    )}
+                  >
+                    <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg border border-gray-700 bg-gray-800 text-[0.625rem] font-medium text-gray-400 group-hover:text-white">
+                      {chat.initial}
+                    </span>
+                    <span className="truncate">{chat.name}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
         </>
     )
 }
@@ -129,7 +131,7 @@ function MobileSidebarView ( { sidebarOpen, setSidebarOpen } ) {
                       <ul role="list" className="flex flex-1 flex-col gap-y-7">
                         <li>
                           <ul role="list" className="-mx-2 space-y-1">
-                            {navigation.map((item) => (
+                            {appPagesNavigation.map((item) => (
                               <li key={item.name}>
                                 <a
                                   href={item.href}
@@ -170,6 +172,7 @@ function MobileSidebarView ( { sidebarOpen, setSidebarOpen } ) {
     )
 }
 
+
 function DesktopSidebarView ( ) {
     return (
         <>
@@ -177,16 +180,16 @@ function DesktopSidebarView ( ) {
             <div className="hidden lg:fixed lg:inset-y-0 lg:z-50 lg:flex lg:w-72 lg:flex-col">
               {/* Sidebar component, swap this element with another sidebar if you like */}
               <div className="flex grow flex-col gap-y-5 overflow-y-auto px-6 pb-4">
-                <div className="flex h-16 shrink-0 items-center">
-                    <ImageComponent src={ "https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" } />
-                </div>
+                
+                <AppLogo />
+
                 <nav className="flex flex-1 flex-col">
                   <ul role="list" className="flex flex-1 flex-col gap-y-7">
                     <li>
                         <AppSidebarMenu />
                     </li>
                     <li>
-                        <ChatHistory />
+                        ---- to add 
                     </li>
                     <li className="mt-auto">
                       <a href="#" className="group -mx-2 flex gap-x-3 rounded-md p-2 text-sm font-semibold leading-6 text-gray-400 hover:bg-gray-800 hover:text-white">
@@ -204,9 +207,14 @@ function DesktopSidebarView ( ) {
 
 function SidebarTop ( ) {
     return (
-        <>
+        <div className="flex flex-1 justify-end gap-x-4 self-stretch lg:gap-x-6 dark:bg-red items-center">
+
+            <ChangeByDates />
+
+            <AddExpense />
+
             <div className="flex flex-1 justify-end gap-x-4 self-stretch lg:gap-x-6">
-              
+
               <div className="flex items-center gap-x-4 lg:gap-x-6">
                 <button type="button" className="-m-2.5 p-2.5 text-gray-400 hover:text-gray-500">
                   <span className="sr-only">View notifications</span>
@@ -220,7 +228,7 @@ function SidebarTop ( ) {
                 <UserAvatar />
               </div>
             </div>
-        </>
+        </div>
     )
 }
 
@@ -232,7 +240,7 @@ export default function Sidebar({ children }) {
 
   return (
     <>
-      <div>
+      <div className='h-full'>
 
         <MobileSidebarView sidebarOpen={ sidebarOpen } setSidebarOpen={ setSidebarOpen } />
 
@@ -242,7 +250,7 @@ export default function Sidebar({ children }) {
 
           { /* top bar */ }
 
-          <div className="sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
+          <div className="dark:bg-black sticky top-0 z-40 flex h-16 shrink-0 items-center gap-x-4 px-4 shadow-sm sm:gap-x-6 sm:px-6 lg:px-8">
             
               { /* menu to toggle sidbar viewable in mobile */ }
               <button type="button" className="-m-2.5 p-2.5 text-gray-700 lg:hidden" onClick={() => setSidebarOpen(true)}>

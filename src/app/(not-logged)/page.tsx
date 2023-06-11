@@ -1,13 +1,23 @@
-import { SignIn } from '@clerk/nextjs/app-beta';
- 
-export default async function Home() {
+'use client'
 
+import Header from './landingComponents/header'
+import HeroComponent from './landingComponents/hero'
+import FeaturesComponent from './landingComponents/features'
+import FaqsComponent from './landingComponents/faqs'
+
+export default function IndexPage() {
   return (
-    <main>
-      <div>
-        <h1 className="text-lg"> index page </h1>
-        <SignIn />
-      </div>
-    </main>
+    <div className="bg-white">
+        <Header />
+
+        <main className="isolate">
+          {/* Hero section */}
+          <HeroComponent />       
+          {/* Feature section */}
+          <FeaturesComponent />
+          {/* FAQs */}
+          <FaqsComponent />
+        </main>
+    </div>
   )
 }

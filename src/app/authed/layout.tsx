@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export async function generateMetadata({ params }) {
   return {
-    title: 'authed app 2',
+    title: 'Trackr - dashboard.',
     description: 'new data',
   };
 } 

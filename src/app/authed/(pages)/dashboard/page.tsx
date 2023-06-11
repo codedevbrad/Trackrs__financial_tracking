@@ -1,7 +1,8 @@
-import UserComponent from "../(clerk)/useAuth"
-import UserData from "../(clerk)/useUser"
+
 import { auth } from '@clerk/nextjs/app-beta'
 
+import Statistics from '../dashboard/components/statistics'
+import Spending from "./components/spending"
 
 async function getData( ): Promise<any> {
   const { userId } : { userId : string | null } = auth();
@@ -18,10 +19,9 @@ export default async function Dashboard () {
   let data = await getData( );
   console.log( data )
   return (
-    <div>
-        <h1 className="text-lg"> this will do something </h1>
-        <UserComponent />
-        <UserData />
-    </div>
+    <>
+        <Statistics />
+        <Spending />
+    </>
   )
 }
