@@ -1,8 +1,17 @@
-# Trackr__financial_tracking.
 
-A financial budgeting app built with:
+<h2 align="center">
+  Trackr__financial_tracking.
+</h2>
 
-[![My Skills](https://skills.thijs.gg/icons?i=nextjs,ts,tailwind,postgres,prisma,postman)](https://skills.thijs.gg)
+<p align="center">
+  <img src="https://github.com/codedevbrad/Trackrs__financial_tracking/assets/46296577/6d7a3d85-3efb-482e-bc0e-3fc4402f60c0" />
+</p>
+
+<p align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skills.thijs.gg/icons?i=nextjs,ts,tailwind,postgres,prisma,postman)" />
+  </a>
+</p>
 
 This is a project for financial tracking called Trackrs__financial_tracking that aims to help individuals track 
 * their financial transactions, 
